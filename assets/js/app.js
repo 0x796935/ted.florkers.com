@@ -63,18 +63,11 @@ async function documentClicked() {
     JSEnabled = true;
     
     setTimeout(async function(){
-        // Loading screen
+        // Screen fade out on click (of yi5)
         let fadeOutDuration = 300;
         $('#loader').fadeOut(fadeOutDuration)
         $('.loader-info').fadeOut(fadeOutDuration)
         $('#loader-wrapper').addClass('loaded');
-
-        // Audio
-        // get audio element
-        var audio = document.getElementById("audio-player");
-        console.log(audio);
-        audio.volume = 1;
-        
     }, 100);
 }
 
